@@ -38,5 +38,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with: 
             name: test
-            path: gfwlist2dnsmasqall.sh
+            path: dnsmasq_gfwlist_ipset.conf
       
