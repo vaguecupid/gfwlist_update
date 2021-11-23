@@ -33,3 +33,10 @@ jobs:
       - name: Run a multi-line script
         run: |
               sh ./gfwlist2dnsmasqall.sh
+              
+      - name: Deliver firmware
+        uses: actions/checkout@v2
+        with:
+          name: gfwlist
+          path: /root/
+      
