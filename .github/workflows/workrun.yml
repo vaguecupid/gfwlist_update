@@ -34,11 +34,11 @@ jobs:
         run: |
               sh ./gfwlist2dnsmasqall.sh
               
-      - name: compile
-        uses: actions/upload-artifact@v2
-        with: 
-            name: test
-            path: dnsmasq_gfwlist_ipset.conf
+      #- name: compile
+      #  uses: actions/upload-artifact@v2
+      #  with: 
+      #      name: test
+      #      path: dnsmasq_gfwlist_ipset.conf
             
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.6
