@@ -43,6 +43,6 @@ jobs:
       - name: Download
         uses: actions/download-artifact@v2
         with:
-            name: my-artifact
+            name: test
             path: dnsmasq_gfwlist_ipset.conf
       
