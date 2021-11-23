@@ -108,7 +108,7 @@ get_args(){
     DNS_PORT=''
     IP_PORT=''
     IPSET_NAME='gfwlist'
-    OUT_FILE='/volume1/web/dnsmasq_gfwlist_ipset.conf'
+    OUT_FILE='./dnsmasq_gfwlist_ipset.conf'
     FILE_FULLPATH=''
     CURL_EXTARG=''
     WGET_EXTARG=''
