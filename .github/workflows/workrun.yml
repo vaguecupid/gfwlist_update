@@ -35,8 +35,8 @@ jobs:
               sh ./gfwlist2dnsmasqall.sh
               
       - name: compile
-              uses: actions/upload-artifact@v2
-              with: 
-                name: test
-                path: gfwlist2dnsmasqall.sh
+        uses: actions/upload-artifact@v2
+        with: 
+            name: test
+            path: gfwlist2dnsmasqall.sh
       
