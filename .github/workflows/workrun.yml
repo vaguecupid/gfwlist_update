@@ -54,4 +54,3 @@ jobs:
         with:
           branch: doc # The branch the action should deploy to.
           folder: .
-          clean: true
