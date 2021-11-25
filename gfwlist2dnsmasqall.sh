@@ -310,10 +310,20 @@ ipset=/\1/VPN_FORCED4,VPN_FORCED6''#g' > $CONF_TMP_FILE
     sed -i '/\(apple.com\|m-team.cc\)/d' $OUT_TMP_FILE
     printf '\nApple & m-team ip discarded\n'
     
-    # Add github.com
+    # Add github yahoo whatismyip mullvad
     sed -i '$a\server=/github.com/'$DNS_IP$IP_PORT$DNS_PORT'\
 ipset=/github.com/VPN_FORCED4,VPN_FORCED6' $OUT_TMP_FILE
     printf '\ngithub.com added\n'
+    sed -i '$a\server=/yahoo.com/'$DNS_IP$IP_PORT$DNS_PORT'\
+ipset=/yahoo.com/VPN_FORCED4,VPN_FORCED6' $OUT_TMP_FILE
+    printf '\yahoo.com added\n'
+    sed -i '$a\server=/whatismyip.com/'$DNS_IP$IP_PORT$DNS_PORT'\
+ipset=/whatismyip.com/VPN_FORCED4,VPN_FORCED6' $OUT_TMP_FILE
+    printf '\whatismyip.com added\n'
+    sed -i '$a\server=/mullvad.net/'$DNS_IP$IP_PORT$DNS_PORT'\
+ipset=/mullvad.net/VPN_FORCED4,VPN_FORCED6' $OUT_TMP_FILE
+    printf '\mullvad.net added\n'
+    
 
     cp $OUT_TMP_FILE $OUT_FILE
     printf '\nConverting GfwList to '$OUT_TYPE'... ' && _green 'Done\n'
